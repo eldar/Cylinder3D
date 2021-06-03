@@ -9,6 +9,9 @@ from builder import model_builder
 from utils.load_save_util import load_checkpoint
 from dataloader.dataset_semantickitti import nb_process_label, cart2polar, polar2cat
 
+"""
+Label map: config/label_mapping/semantic-kitti.yaml
+"""
 
 def create_segm_model(pytorch_device):
     cylinder_path = pathlib.Path(__file__).parent.absolute()
